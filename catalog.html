@@ -3,64 +3,195 @@
  <head>
   <meta cherset="utf-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="./css/style.css">
  </head>
- <body>
- <header class="main-header">
-   <div class="container">
-     <nav class="main-navigation">
+  <body>
+
+
+    <header class="main-header">
+     <div class="container " style="position: relative;">
+      <nav class="main-navigation">
        <ul>
-         <li>
-           <a href="#">
-             <img src="logo.png">
-           </a>
-         </li>
-         <li>
-           <a href="#">Каталог</a>
-         </li>
-         <li>
-           <a href="#">Доставка и оплата</a>
-         </li>
-         <li>
-           <a href="#">О компании</a>
-         </li>
+        <li>
+         <a href="#">
+          <img src="logo.png">
+         </a>
+        </li>
+        <li>
+         <a href="#">Каталог</a>
+        </li>
+        <li>
+         <a href="#">Доставка и оплата</a>
+        </li>
+        <li>
+         <a href="#">О компании</a>
+        </li>
        </ul>
-     </nav>
-     <div class="user-block">
+      </nav>
+
+      <div class="user-block">
        <a class="user-search" href="#search">
-         <img src=""></a>
+        <img src="">
+            <!-- FORM  -->
+       </a>
        <a class="user" href="#login">
-         <img src="">Вход
+        <img src="">
+        <span>Вход</span>
        </a>
        <a class="user" href="#items">
-         <img src="">2 товара
+        <img src="">
+        <span>Пусто</span>
        </a>
+      </div>
+
+      <div class="work">
+       <div class="work-time">с 10 до 22, ежедневно</div>
+       <div class="work-number">8 812 450-25-55</div>
+      </div>
      </div>
-   </div>
- </header>
- <main>
-   <div class="breadcrumbs">
-     <a href="#" class="">Главная</a>
-     <a href="#" class="">Каталог</a>
-     <a href="#" class="">Сливочное</a>
-   </div>
-   <div class="choose">
-     <h1>Сливочное мороженое</h1>
-     <form action="/" method="post">
+    </header>
+
+
+
+  <main>
+   <div class="container">
+    <div class="breadcrumbs">
+      <ul>
+        <li><a href="#" class="">Главная</a></li>
+        <li><a href="#" class="">Каталог</a></li>
+        <li><a href="#" class="">Сливочное</a></li>
+      </ul>
+     </div>
+
+    <div class="choose">
+    <form action="/" method="post">
+     <div class="choose-list">
       <label>Сортировка</label>
-      <select name="">
-      </select>
-      <label>Цена: 100руб. - 500руб.</label>
-      <input type="range" min="100" max="500">
+       <select name=""></select>
+     </div>
+     <div class="choose-price">
+      <label for="price">Цена: 100руб. - 500руб.</label>
+          <input id="price" type="range" min="100" max="500">
+     </div>
+     <div class="choose-fat">
       <label>Жирность:</label>
-      <input type="checkbox">0%
-      <input type="checkbox" checked>до 10%
-      <input type="checkbox">до 30%
-      <input type="checkbox">выше 30%
-      <label>Наполнители:</label>
-      /* тут тоже чекбоксы? */
-      <button type="text" class="btn">Применить</button>
+      <input name="fatness" type="radio"><span>0%</span>
+      <input name="fatness" type="radio" checked><span>до 10%</span>
+      <input name="fatness" type="radio"><span>до 30%</span>
+      <input  name="fatness" type="radio"><span>выше 30%</span>
+     </div>
+     <div class="inside">
+      <label>Наполнители</label>
+      <input type="checkbox" name="shoko">
+      <input type="checkbox" name="sugar">
+      <input type="checkbox" name="apples">
+      <input type="checkbox" name="sirop">
+      <input type="checkbox" name="jem">
+     </div>
+      <input type="submit" value="Применить">
      </form>
-   </div>
- </main>
- </body>
+    </div>
+
+
+
+
+    <div class="catalog-preview">
+
+     <article class="catalog-item">
+      <div class="catalog-item-image">
+       <img src="yellowicecream.png" alt="" witdh="50" height="50">
+       <img src="" alt="">
+      </div>
+       <span class="price">310 Р/кг</span>
+       <p class="about-icecream">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+     </article>
+     <article class="catalog-item">
+      <div class="catalog-item-image">
+       <img src="brownicecream.png" alt="" witdh="50" height="50">
+       <img src="" alt="">
+      </div>
+       <span class="price">380 Р/кг</span>
+       <p class="about-icecream">Сливочно-клубничное с присыпкой из белого шоколада</p>
+      </article>
+      <article class="catalog-item">
+       <div class="catalog-item-image">
+        <img src="brownicecream.png" alt="" witdh="50" height="50">
+        <img src="" alt="">
+       </div>
+        <span class="price">355 Р/кг</span>
+        <p class="about-icecream">Сливочно-кофейное с кусочками шоколада</p>
+      </article>
+      <article class="catalog-item">
+       <div class="catalog-item-image">
+        <img src="pinkicecream.png" alt="" witdh="50" height="50">
+        <img src="" alt="">
+       </div>
+        <span class="price">415 Р/кг</span>
+        <p class="about-icecream">Сливочное крем-брюлле с карамельной подпиткой</p>
+      </article>
+
+      <!-- еще 8 артиклов в этом диве -->
+
+    </div>
+
+    <div class="paginator">
+     <a class="prev" href="#prev">
+      <img src="">
+     </a>
+     <a href="#1">1</a>
+     <a href="#2">2</a>
+     <a href="#3">3</a>
+     <a href="#3">4</a>
+     <a href="#3">5</a>
+     <a class="next" href="#next">
+      <img src="">
+     </a>
+    </div>
+
+
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-social">
+         <ul>
+          <li>
+            <a class="footer-social footer-social-tw" href="#"></a>
+          </li>
+          <li>
+            <a class="footer-social footer-social-inst" href="#"></a>
+          </li>
+          <li>
+            <a class="footer-social footer-social-fb" href="#"></a>
+          </li>
+          <li>
+            <a class="footer-social footer-social-vk" href="#"></a>
+          </li>
+         </ul>
+        </section>
+        <section class="reference">
+         <ul>
+          <li>
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li>
+            <a href="#">О производстве</a>
+          </li>
+          <li>
+            <a href="#">Наши документы</a>
+          </li>
+          <li>
+            <a href="#">Экологические стандарты</a>
+          </li>
+         </ul>
+        </section>
+        <section class="copyright">
+          <a href="">
+            <img src="">
+          </a>
+          <p>Сделано в <a href="">HTML Academy</a> © 2017</p>
+        </section>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
