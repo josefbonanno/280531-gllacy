@@ -55,13 +55,29 @@
 
   <main>
    <div class="container">
-    <form action="" method="post">
-     <input type="radio" name="change-body">
-     <input type="radio" name="change-body">
-     <input type="radio" name="change-body">
-    </form>
-   <div class="take-it">
+    <div class="checkbox">
+     <input type="checkbox" name="change-body">
+     <input type="checkbox" name="change-body">
+     <input type="checkbox" name="change-body">
+    </div>
+
+   <div class="slider">
+
+    <div class="slide">
+     <div>...text</div>
     <a href="" clas="btn">Давайте оба!</a>
+    </div>
+
+    <div class="slide">
+     <div>...text</div>
+    <a href="" clas="btn">Давайте оба!</a>
+    </div>
+
+    <div class="slide">
+     <div>...text</div>
+    <a href="" clas="btn">Давайте оба!</a>
+    </div>
+
    </div>
 
 
@@ -82,36 +98,51 @@
    <div class="catalog-preview">
 
     <article class="catalog-item">
-     <div class="catalog-item-image">
-      <img src="yellowicecream.png" alt="" witdh="50" height="50">
-      <img src="" alt="">
+     <div class="catalog-item__image">
+      <img src="" alt=""> <!-- Картинка мороженного -->
+      <img src="" alt=""> <!-- Хит -->
+      <span class="price">310 Р/кг</span> <!-- Цена -->
      </div>
-      <span class="price">310 Р/кг</span>
       <p class="about-icecream">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+      <div class="hide-block">
+      <!-- Скрытый блок с кнопкой -->
+      </div>
     </article>
+
     <article class="catalog-item">
-     <div class="catalog-item-image">
-      <img src="brownicecream.png" alt="" witdh="50" height="50">
-      <img src="" alt="">
+     <div class="catalog-item__image">
+       <img src="" alt=""> <!-- Картинка мороженного -->
+       <img src="" alt=""> <!-- Хит -->
+      <span class="price">310 Р/кг</span> <!-- Цена -->
      </div>
-      <span class="price">380 Р/кг</span>
       <p class="about-icecream">Сливочно-клубничное с присыпкой из белого шоколада</p>
-     </article>
-     <article class="catalog-item">
-      <div class="catalog-item-image">
-       <img src="brownicecream.png" alt="" witdh="50" height="50">
-       <img src="" alt="">
+      <div class="hide-block">
+      <!-- Скрытый блок с кнопкой -->
       </div>
-       <span class="price">355 Р/кг</span>
+     </article>
+
+     <article class="catalog-item">
+      <div class="catalog-item__image">
+        <img src="" alt=""> <!-- Картинка мороженного -->
+        <img src="" alt=""> <!-- Хит -->
+       <span class="price">310 Р/кг</span> <!-- Цена -->
+      </div>
        <p class="about-icecream">Сливочно-кофейное с кусочками шоколада</p>
+       <div class="hide-block">
+       <!-- Скрытый блок с кнопкой -->
+       </div>
      </article>
+
      <article class="catalog-item">
-      <div class="catalog-item-image">
-       <img src="pinkicecream.png" alt="" witdh="50" height="50">
-       <img src="" alt="">
+      <div class="catalog-item__image">
+        <img src="" alt=""> <!-- Картинка мороженного -->
+        <img src="" alt=""> <!-- Хит -->
+       <span class="price">310 Р/кг</span> <!-- Цена -->
       </div>
-       <span class="price">415 Р/кг</span>
        <p class="about-icecream">Сливочное крем-брюлле с карамельной подпиткой</p>
+       <div class="hide-block">
+       <!-- Скрытый блок с кнопкой -->
+       </div>
      </article>
 
     </div>
@@ -121,22 +152,22 @@
   <section class="about-us">
         <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
         <div class="why-we">
-         <div class="why-we-first">
+         <div class="dominate">
            <img src="">
            <p>
              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
              временами технологий
            </p>
          </div>
-         <div class="why-we-second">
+         <div class="dominate">
            <img src="">
            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья</p>
          </div>
-         <div class="why-we-third">
+         <div class="dominate">
            <img src="">
            <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
          </div>
-         <div class="why-we-forth">
+         <div class="dominate">
            <img src="">
            <p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
          </div>
@@ -149,7 +180,7 @@
 
         <div class="news sale-item">
           <h6>Новое в нашем блоге</h6>
-          <p class="news-text">10 способов сервировки фруктовых щербетов к столу</p>
+          <p class="news-text"><a href="">10 способов сервировки фруктовых щербетов к столу</a></p>
         </div>
         <div class="mail sale-item">
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе самого вкусного, что у нас происходит. Обещаем не
