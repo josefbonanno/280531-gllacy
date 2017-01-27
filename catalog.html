@@ -74,19 +74,19 @@
           <input id="price" type="range" min="100" max="500">
      </div>
      <div class="choose-fat">
-      <span>Жирность:</span>
+      <label>Жирность:</label>
       <input name="fatness" type="radio"><label>0%</label>
       <input name="fatness" type="radio" checked><label>до 10%</label>
       <input name="fatness" type="radio"><label>до 30%</label>
       <input  name="fatness" type="radio"><label>выше 30%</label>
      </div>
      <div class="inside">
-      <span>Наполнители</span>
-      <input type="checkbox" name="shoko"><label>шоколадные</label>
-      <input type="checkbox" name="sugar"><label>сахарные присыпки</label>
-      <input type="checkbox" name="apples"><label>фрукты</label>
-      <input type="checkbox" name="sirop"><label>сиропы</label>
-      <input type="checkbox" name="jem"><label>джемы</label>
+      <label>Наполнители</label>
+      <input type="checkbox" name="shoko"><label>Шоколадные</label>
+      <input type="checkbox" name="sugar"><label>Сахарные присыпки</label>
+      <input type="checkbox" name="apples"><label>Фрукты</label>
+      <input type="checkbox" name="sirop"><label>Сиропы</label>
+      <input type="checkbox" name="jem"><label>Джемы</label>
      </div>
       <input type="submit" value="Применить">
      </form>
@@ -98,83 +98,70 @@
     <div class="catalog-preview">
 
      <article class="catalog-item">
-      <div class="catalog-item__image">
-       <img src="" alt=""> <!-- Картинка мороженного -->
-       <img src="" alt=""> <!-- Хит -->
-       <span class="price">310 Р/кг</span> <!-- Цена -->
+      <div class="catalog-item-image">
+       <img src="yellowicecream.png" alt="" witdh="50" height="50">
+       <img src="" alt="">
       </div>
+       <span class="price">310 Р/кг</span>
        <p class="about-icecream">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-       <div class="hide-block">
-       <!-- Скрытый блок с кнопкой -->
-       </div>
      </article>
-
      <article class="catalog-item">
-      <div class="catalog-item__image">
-        <img src="" alt=""> <!-- Картинка мороженного -->
-        <img src="" alt=""> <!-- Хит -->
-       <span class="price">310 Р/кг</span> <!-- Цена -->
+      <div class="catalog-item-image">
+       <img src="brownicecream.png" alt="" witdh="50" height="50">
+       <img src="" alt="">
       </div>
+       <span class="price">380 Р/кг</span>
        <p class="about-icecream">Сливочно-клубничное с присыпкой из белого шоколада</p>
-       <div class="hide-block">
-       <!-- Скрытый блок с кнопкой -->
-       </div>
       </article>
-
       <article class="catalog-item">
-       <div class="catalog-item__image">
-         <img src="" alt=""> <!-- Картинка мороженного -->
-         <img src="" alt=""> <!-- Хит -->
-        <span class="price">310 Р/кг</span> <!-- Цена -->
+       <div class="catalog-item-image">
+        <img src="brownicecream.png" alt="" witdh="50" height="50">
+        <img src="" alt="">
        </div>
+        <span class="price">355 Р/кг</span>
         <p class="about-icecream">Сливочно-кофейное с кусочками шоколада</p>
-        <div class="hide-block">
-        <!-- Скрытый блок с кнопкой -->
-        </div>
       </article>
-
       <article class="catalog-item">
-       <div class="catalog-item__image">
-         <img src="" alt=""> <!-- Картинка мороженного -->
-         <img src="" alt=""> <!-- Хит -->
-        <span class="price">310 Р/кг</span> <!-- Цена -->
+       <div class="catalog-item-image">
+        <img src="pinkicecream.png" alt="" witdh="50" height="50">
+        <img src="" alt="">
        </div>
+        <span class="price">415 Р/кг</span>
         <p class="about-icecream">Сливочное крем-брюлле с карамельной подпиткой</p>
-        <div class="hide-block">
-        <!-- Скрытый блок с кнопкой -->
-        </div>
       </article>
 
       <!-- еще 8 артиклов в этом диве -->
 
     </div>
 
-   <div class="pagination">
-    <li>
-     <a class="prev" href="#prev">
-     <img src="">
-     </a>
-    <li>
-     <a href="#1">1</a>
-    </li>
-    <li>
-     <a href="#2">2</a>
-    </li>
-    <li>
-     <a href="#3">3</a>
-    </li>
-    <li>
-     <a href="#4">4</a>
-    </li>
-    <li>
-     <a href="#5">5</a>
-    </li>
-    <li>
-     <a class="next" href="#next">
-     <img src="">
-     </a>
-    </li>
-   </div>
+    <div class="pagination">
+    <ul>
+      <li><a class="prev" href="#prev">
+       <img src="">
+       </a>
+      </li>
+      <li>
+       <a href="#1">1</a>
+      </li>
+      <li>
+       <a href="#2">2</a>
+      </li>
+      <li>
+       <a href="#3">3</a>
+      </li>
+      <li>
+       <a href="#3">4</a>
+      </li>
+      <li>
+       <a href="#3">5</a>
+      </li>
+      <li>
+       <a class="next" href="#next">
+       <img src="">
+       </a>
+      </li>
+     </ul>
+    </div>
 
 
     <footer class="main-footer">
