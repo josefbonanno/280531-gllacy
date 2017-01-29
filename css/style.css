@@ -3,23 +3,32 @@ font-size: 18px;
 font-family: Roboto;
 color: #ffffff;
 font-weight: normal;
-background-color: #ffffff;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.page_wrapper {
+  background: #849d8f;
+}
+.change-checkbox {
+  display: none;
 }
 .container {
  margin: 0 auto;
  width: 1200px;
- background-color: #849d8f;
 }
 .containter-header {
   min-height: 80px;
 }
-.nav {
+.main-navigation {
  float: left;
 }
 ul.nav li {
-display: inline;
+display: inline-block;
 margin-right: 27px;
-vertical-align: top;
+vertical-align: middle;
 margin-top: 0;
 }
 
@@ -50,11 +59,6 @@ margin-top: 10px;
  top: 75px;
  right: 27px;
 }*/
-div.user-block::after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 
 .sale {
