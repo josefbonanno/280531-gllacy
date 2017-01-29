@@ -1,8 +1,8 @@
-<!DOCTYPE HTML>
-<html lang="ru">
+<!DOCTYPE html>
+<html>
 
  <head>
-  <meta cherset="utf-8">
+  <meta charset="utf-8">
   <title>Gllasy Shop</title>
   <link rel="stylesheet" href="./css/style.css">
  </head>
@@ -10,12 +10,12 @@
  <body>
 
   <header class="main-header">
-   <div class="container " style="position: relative;">
+   <div class="container container-header">
     <nav class="main-navigation">
-     <ul>
+     <ul class="nav">
       <li>
        <a href="#">
-        <img src="logo.png">
+        <img class="logo" src="./img/logo.png">
        </a>
       </li>
       <li>
@@ -31,35 +31,35 @@
     </nav>
 
     <div class="user-block">
-     <a class="user-search" href="#search">
-      <img src="">
+     <a class="user" href="#search">
+      <img src="./img/search.png">
           <!-- FORM  -->
      </a>
      <a class="user" href="#login">
-      <img src="">
+      <img src="./img/enter.png">
       <span>Вход</span>
      </a>
      <a class="user" href="#items">
-      <img src="">
+      <img src="./img/basket.png">
       <span>Пусто</span>
      </a>
     </div>
 
-    <div class="work">
+    <!--<div class="work">
      <div class="work-time">с 10 до 22, ежедневно</div>
      <div class="work-number">8 812 450-25-55</div>
-    </div>
+   </div>-->
+
    </div>
   </header>
 
 
   <main>
    <div class="container">
-    <div class="checkbox">
+    <!--
      <input type="checkbox" name="change-body">
      <input type="checkbox" name="change-body">
      <input type="checkbox" name="change-body">
-    </div>
 
    <div class="slider">
 
@@ -78,18 +78,18 @@
     <a href="" clas="btn">Давайте оба!</a>
     </div>
 
-   </div>
+  </div>-->
 
 
    <div class="sale">
     <div class="sale-left sale-item">
      <h2>Малинка даром!</h2>
-     <p>При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно</p>
+     <p class="sale_p">При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно</p>
      <a class="btn" href="#">Хочу варенье!</a>
     </div>
     <div class="sale-right sale-item">
      <h2>Шоколадки даром!</h2>
-     <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
+     <p class="sale_p">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
      <a class="btn" href="#">Хочу шоколадки!</a>
     </div>
    </div>
@@ -99,8 +99,8 @@
 
     <article class="catalog-item">
      <div class="catalog-item__image">
-      <img src="" alt=""> <!-- Картинка мороженного -->
-      <img src="" alt=""> <!-- Хит -->
+      <img class="img_ice" src="./img/icecream1.jpg" alt=""> <!-- Картинка мороженного -->
+      <img img class="img_hit" src="./img/hit.jpg" alt=""> <!-- Хит -->
       <span class="price">310 Р/кг</span> <!-- Цена -->
      </div>
       <p class="about-icecream">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -111,8 +111,8 @@
 
     <article class="catalog-item">
      <div class="catalog-item__image">
-       <img src="" alt=""> <!-- Картинка мороженного -->
-       <img src="" alt=""> <!-- Хит -->
+       <img class="img_ice" src="./img/icecream2.jpg" alt=""> <!-- Картинка мороженного -->
+       <img class="img_hit" src="./img/hit.jpg" alt=""> <!-- Хит -->
       <span class="price">310 Р/кг</span> <!-- Цена -->
      </div>
       <p class="about-icecream">Сливочно-клубничное с присыпкой из белого шоколада</p>
@@ -123,8 +123,8 @@
 
      <article class="catalog-item">
       <div class="catalog-item__image">
-        <img src="" alt=""> <!-- Картинка мороженного -->
-        <img src="" alt=""> <!-- Хит -->
+        <img class="img_ice" src="./img/icecream3.jpg" alt=""> <!-- Картинка мороженного -->
+        <img class="img_hit" src="./img/hit.jpg" alt=""> <!-- Хит -->
        <span class="price">310 Р/кг</span> <!-- Цена -->
       </div>
        <p class="about-icecream">Сливочно-кофейное с кусочками шоколада</p>
@@ -135,8 +135,8 @@
 
      <article class="catalog-item">
       <div class="catalog-item__image">
-        <img src="" alt=""> <!-- Картинка мороженного -->
-        <img src="" alt=""> <!-- Хит -->
+        <img class="img_ice" src="./img/icecream4.jpg" alt=""> <!-- Картинка мороженного -->
+        <img img class="img_hit" src="./img/hit.jpg" alt=""> <!-- Хит -->
        <span class="price">310 Р/кг</span> <!-- Цена -->
       </div>
        <p class="about-icecream">Сливочное крем-брюлле с карамельной подпиткой</p>
@@ -152,25 +152,32 @@
   <section class="about-us">
         <h3>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
         <div class="why-we">
+
+         <div class="why-we-left">
          <div class="dominate">
-           <img src="">
-           <p>
+           <img class="dominate_img" src="./img/icecream-waffle.png">
+           <p class="dominate_p">
              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
              временами технологий
            </p>
          </div>
          <div class="dominate">
-           <img src="">
-           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья</p>
+           <img class="dominate_img dominate_img_bot" src="./img/cook-waffle.png">
+           <p class="dominate_p">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья</p>
+         </div>
+       </div>
+       <div class="why-we-right">
+         <div class="dominate">
+           <img class="dominate_img" src="./img/cow-waffle.png">
+           <p class="dominate_p">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
          </div>
          <div class="dominate">
-           <img src="">
-           <p>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</p>
+           <img class="dominate_img dominate_img_bot" src="./img/termo-waffle.png">
+           <p class="dominate_p">Доставка нашего мороженного до заказчиков осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
          </div>
-         <div class="dominate">
-           <img src="">
-           <p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
-         </div>
+       </div>
+
+       </div>
 
      </section>
 
@@ -183,52 +190,53 @@
           <p class="news-text"><a href="">10 способов сервировки фруктовых щербетов к столу</a></p>
         </div>
         <div class="mail sale-item">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе самого вкусного, что у нас происходит. Обещаем не
+         <div class="under_mail">
+          <p class="mail_p">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе самого вкусного, что у нас происходит. Обещаем не
             спамить и не слать всякой ненужной ерунды. Честно =)</p>
           <form action="" method="post">
             <input type="text" name="email" placeholder="Электронная почта">
             <button type="submit" class="btn">Отправить</button>
           </form>
-
-         </div>
         </div>
+       </div>
       </div>
 
 
       <section class="map">
         <!-- IFRAME -->
       <div class="address">
-        <span>Адрес главного офиса и офлайн магазина</span>
-        <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+        <span class="span_address">Адрес главного офиса и офлайн магазина</span>
+        <p class="map_address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         <div class="work">
          <div class="work-time">с 10 до 22, ежедневно</div>
          <div class="work-number">8 812 450-25-55</div>
         </div>
-        <a class="btn" href="#form">Форма обратной связи</a>
+        <a class="btn_map" href="#form">Форма обратной связи</a>
       </div>
       <div>
         <!--form -->
       </div>
     </section>
+
 </main>
 
 
 
   <footer class="main-footer">
-    <div class="container">
+    <div class="container container-footer">
       <section class="footer-social">
-       <ul>
+       <ul class="social">
         <li>
-          <a class="footer-social footer-social-tw" href="#"></a>
+          <a class="footer-social footer-social-tw" href="#"><img src="./img/twitter.png"></a>
         </li>
         <li>
-          <a class="footer-social footer-social-inst" href="#"></a>
+          <a class="footer-social footer-social-inst" href="#"><img src="./img/inst.png"></a>
         </li>
         <li>
-          <a class="footer-social footer-social-fb" href="#"></a>
+          <a class="footer-social footer-social-fb" href="#"><img src="./img/fb.png"></a>
         </li>
         <li>
-          <a class="footer-social footer-social-vk" href="#"></a>
+          <a class="footer-social footer-social-vk" href="#"><img src="./img/vk.png"></a>
         </li>
        </ul>
       </section>
@@ -249,10 +257,10 @@
        </ul>
       </section>
       <section class="copyright">
-        <a href="">
+        <a href="#">
           <img src="">
         </a>
-        <p>Сделано в <a href="">HTML Academy</a> © 2017</p>
+        <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
       </section>
     </div>
   </footer>

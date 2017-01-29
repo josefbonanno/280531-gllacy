@@ -1,8 +1,281 @@
 body {
-
 font-size: 18px;
 font-family: Roboto;
 color: #ffffff;
 font-weight: normal;
-line-height: 1.5;
+background-color: #ffffff;
+}
+.container {
+ margin: 0 auto;
+ width: 1200px;
+ background-color: #849d8f;
+}
+.containter-header {
+  min-height: 80px;
+}
+.nav {
+ float: left;
+}
+ul.nav li {
+display: inline;
+margin-right: 27px;
+vertical-align: top;
+margin-top: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a.user {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: #a0b5a9;
+  border-radius: 50px;
+}
+a.user img {
+  vertical-align: middle;
+  text-align: center;
+}
+.user-block {
+padding-top: 20px;
+float: right;
+width: 233px;
+margin-right: 47px;
+margin-top: 10px;
+}
+/*.work {
+ width: 170px;
+ height: 40px;
+ top: 75px;
+ right: 27px;
+}*/
+div.user-block::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.sale {
+ width: 1146px;
+ margin: 0 27px;
+}
+.sale-item {
+  width: 560px;
+  border-radius: 15px;
+}
+.sale-left {
+  background-image: url("/img/malinka.jpg");
+  float: left;
+  min-height: 230px;
+  margin-right: 20px;
+  background-color: red;
+}
+.sale-right {
+  float: right;
+  background: url("./img/chocolate.jpg");
+  background-color: blue;
+  background-position: 50% 50%;
+  min-height: 230px;
+}
+h2 {
+margin-left: 20px;
+font-size: 35px;
+background-color: green;
+margin-top: 30px;
+width: 300px;
+}
+p.sale_p {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 10px;
+  background-color: brown;
+  width: 470px;
+}
+a.btn {
+  width: 170px;
+  padding: 10px 20px;
+  background-color: #e9563a;
+  border-radius: 30px;
+  margin-left: 350px;
+  margin-top: 160px;/* ne pashet :( */
+}
+
+.catalog-preview {
+  clear: both;
+  width: 1146px;
+  margin: 0 27px;
+}
+article {
+  width: 267px;
+  min-height: 330px;
+  display: inline-block;
+  margin-top: 40px;
+  margin-right: 21px;
+}
+article:last-of-type {
+  margin-right: 0;
+
+}
+.catalog-item__image {
+position: relative;
+
+}
+p.about-icecream {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 16px;
+
+}
+span.price {
+  position: absolute;
+  top: 210px;
+  right: 110px;
+  font-size: 45px;
+}
+
+.img_hit {
+  border-radius: 40px;
+  position: absolute;
+  top: 0px;
+}
+.img_ice {
+  border-radius: 135px;
+}
+
+
+.about-us {
+  margin: 0 27px;
+  width: 1146px;
+  height: 310px;
+  background-image: url("./img/waffle.jpg");
+  border-radius: 20px;
+}
+h3 {
+margin-left: 20px;
+padding-top: 30px;
+font-size: 24px;
+width: 1000px;
+}
+
+.why-we-left {
+  width: 540px;
+  float: left;
+  margin-left: 20px;
+}
+.why-we-right {
+  width: 540px;
+  float: right;
+}
+
+.dominate_img {
+  float: left;
+}
+.dominate_p {
+  margin-top: 15px;
+  float: right;
+  width: 450px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.dominate_img_bot {
+  padding-top: 40px;
+}
+
+
+
+.news-mail {
+    width: 1146px;
+    min-height: 230px;
+    margin: 0 27px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.news {
+  background-color: blue;
+  float: left;
+  min-height: 230px;
+}
+.mail {
+  float: right;
+  background-color: green;
+  min-height: 230px;
+}
+h6 {
+  background-color: brown;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.news-text {
+width: 290px;
+min-height: 85px;
+font-size: 24px;
+font-weight: bold;
+background-color: brown;
+margin-left: 20px;
+margin-top: 10px;
+}
+.under_mail {
+   padding: 15px;
+   background-color: orange;
+}
+.mail_p {
+  background-color: brown;
+}
+
+
+
+section.map {
+  width: 1200px;
+  height: 430px;
+  background-color: blue;
+  margin: 0 auto;
+  position: relative;
+}
+.address {
+  position: absolute;
+  right: 20px;
+  top: 70px;
+  background-color: orange;
+  width: 275px;
+  height: 270px;
+  padding-top: 30px;
+  padding-left: 25px;
+}
+.span_address {
+  width: 150px;
+  font-size: 14px;
+}
+.map_address {
+  padding-left: 0px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 0px;
+  width: 220px;
+}
+
+.container-footer {
+  min-height: 102px;
+}
+section.footer-social {
+  float: left;
+  background-color: green;
+}
+ul.social li {
+  display: inline;
+  list-style: none;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.reference {
+  width: 200px;
+  height: 102px;
+  float: left;
+  background-color: red;
+  margin-left: 300px;
+}
+.copyright {
+  float: right;
 }
