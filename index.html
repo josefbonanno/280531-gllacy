@@ -12,6 +12,7 @@
    <input type="checkbox" name="change-body" class="change-checkbox">
    <input type="checkbox" name="change-body" class="change-checkbox">
    <input type="checkbox" name="change-body" class="change-checkbox">
+
  <div class="page_wrapper">
 
   <header class="main-header">
@@ -30,21 +31,21 @@
        <a href="#">Доставка и оплата</a>
       </li>
       <li>
-       <a href="#">О компании</a>
+       <a href="#">О Компании</a>
       </li>
      </ul>
     </nav>
 
     <div class="user-block">
-     <a class="user" href="#search">
+     <a class="user user-search" href="#search">
       <img src="./img/search.png">
           <!-- FORM  -->
      </a>
-     <a class="user" href="#login">
+     <a class="user user-login" href="#login">
       <img src="./img/enter.png">
       <span>Вход</span>
      </a>
-     <a class="user" href="#items">
+     <a class="user user-cart" href="#items">
       <img src="./img/basket.png">
       <span>Пусто</span>
      </a>
@@ -61,22 +62,7 @@
 
   <main>
    <div class="container">
-    <!--
-     <input type="checkbox" name="change-body">
-     <input type="checkbox" name="change-body">
-     <input type="checkbox" name="change-body">
-
-   <div class="slider">
-
-    <div class="slide">
-     <div>...text</div>
-    <a href="" clas="btn">Давайте оба!</a>
-    </div>
-
-    <div class="slide">
-     <div>...text</div>
-    <a href="" clas="btn">Давайте оба!</a>
-    </div>
+   <!--<div class="slider">
 
     <div class="slide">
      <div>...text</div>
@@ -86,7 +72,7 @@
   </div>-->
 
 
-   <div class="sale">
+   <div class="sale clearfix">
     <div class="sale-left sale-item">
      <h2>Малинка даром!</h2>
      <p class="sale_p">При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно</p>
@@ -168,7 +154,7 @@
          </div>
          <div class="dominate">
            <img class="dominate_img dominate_img_bot" src="./img/cook-waffle.png">
-           <p class="dominate_p">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья</p>
+           <p class="dominate_p dominate_p_under">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья</p>
          </div>
        </div>
        <div class="why-we-right">
@@ -178,7 +164,7 @@
          </div>
          <div class="dominate">
            <img class="dominate_img dominate_img_bot" src="./img/termo-waffle.png">
-           <p class="dominate_p">Доставка нашего мороженного до заказчиков осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
+           <p class="dominate_p dominate_p_under">Доставка нашего мороженного до заказчиков осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус</p>
          </div>
        </div>
 
@@ -190,11 +176,11 @@
 
       <div class="news-mail">
 
-        <div class="news sale-item">
+        <div class="news sale-item clearfix">
           <h6>Новое в нашем блоге</h6>
-          <p class="news-text"><a href="">10 способов сервировки фруктовых щербетов к столу</a></p>
+          <p class="news-text"><a class="url_news" href="">10 способов сервировки фруктовых щербетов к столу</a></p>
         </div>
-        <div class="mail sale-item">
+        <div class="mail sale-item clearfix">
          <div class="under_mail">
           <p class="mail_p">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе самого вкусного, что у нас происходит. Обещаем не
             спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -204,19 +190,24 @@
           </form>
         </div>
        </div>
+
       </div>
 
+</div>
 
       <section class="map">
         <!-- IFRAME -->
       <div class="address">
-        <span class="span_address">Адрес главного офиса и офлайн магазина</span>
+        <div class="span_address">Адрес главного офиса и офлайн магазина:</div>
         <p class="map_address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         <div class="work">
-         <div class="work-time">с 10 до 22, ежедневно</div>
+         <div class="span_address">Для заказов по телефону:</div>
          <div class="work-number">8 812 450-25-55</div>
+         <div class="work-time">(с 10 до 22, ежедневно)</div>
         </div>
+      <div class="form">
         <a class="btn_map" href="#form">Форма обратной связи</a>
+      </div>
       </div>
       <div>
         <!--form -->
@@ -263,7 +254,7 @@
       </section>
       <section class="copyright">
         <a href="#">
-          <img src="">
+          <img class="logohtml" src="./img/logohtml.png">
         </a>
         <p>Сделано в <a href="#">HTML Academy</a> © 2017</p>
       </section>
