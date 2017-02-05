@@ -10,7 +10,7 @@
 }
 body {
 font-size: 16px;
-font-family: Roboto,sans-serif;
+font-family: 'Roboto', sans-serif;
 color: #ffffff;
 font-weight: normal;
 }
@@ -20,7 +20,7 @@ font-weight: normal;
   clear: both;
 }
 .page_wrapper {
-  background: #ffffff;
+  background: #849d8f;
 }
 .change-checkbox {
   display: none;
@@ -28,11 +28,13 @@ font-weight: normal;
 .container {
  margin: 0 auto;
  width: 1200px;
- background: #849d8f;
  padding: 0 27px;
+ padding-bottom: 40px;
+ position: relative;
 }
 .containter-header {
   min-height: 80px;
+  position: relative;
 }
 .main-navigation {
  float: left;
@@ -73,18 +75,41 @@ margin-top: 20px;
 .user-login {
   width: 93px;
   justify-content: center;
+  padding-left: 35px;
+  display: block;
 }
-.user-login img {
-  margin-right: 8px;
+.user-search::before {
+  content: "";
+  display: table;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../img/search.png") no-repeat;
+  right: 270px;
+}
+.user-login::before {
+  content: "";
+  display: table;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../img/enter.png") no-repeat;
+  right: 220px;
 }
 
 .user-cart {
-  width: 112px;
-  padding-left: 15px;
+  width: 117px;
+  padding-left: 45px;
+  display: block;
 
 }
-.user-cart img {
-  margin-right: 8px;
+.user-cart::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../img/basket.png") no-repeat;
+    right: 110px;
 }
 
 /*.work {
@@ -122,20 +147,32 @@ h2 {
 margin-left: 20px;
 font-size: 35px;
 margin-top: 15px;
+line-height: 44px;
 }
 p.sale_p {
   margin-left: 20px;
-  margin-top: 20px;
-  width: 500px;
-  font-weight: bold;
+  margin-top: 15px;
+  width: 520px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
 }
 a.btn {
-  padding: 15px 23px;
+  padding: 10px 5px;
   background-color: #e9563a;
   border-radius: 30px;
   float: right;
   margin-right: 22px;
-  margin-top: 50px;
+  margin-top: 40px;
+  min-height: 45px;
+  width: 165px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+.sale-right a.btn {
+  width: 190px;
+  min-height: 45px;
 }
 
 
@@ -156,15 +193,14 @@ position: relative;
 
 }
 p.about-icecream {
-  margin-top: 5px;
+  margin-top: 15px;
   text-align: center;
-  font-size: 16px;
+  line-height: 22px;
 
 }
 span.price {
   position: absolute;
   top: 210px;
-  right: 110px;
   font-size: 45px;
 }
 
@@ -176,6 +212,7 @@ span.price {
 .img_ice {
   border-radius: 135px;
 }
+
 
 
 
