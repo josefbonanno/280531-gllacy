@@ -198,7 +198,7 @@ a.user-login:hover::before {
 }
 a.user-login:hover {
   color: #e9e8e5;
-  background: #f8f7f4 !important;
+  background: #f8f7f4;
 }
 
 .user-cart {
