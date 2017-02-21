@@ -212,7 +212,14 @@ a.user-login:hover {
    border-radius: 10px;
    min-height: 85px;
 }
-.user-search:hover .hide-search{
+.user-search-block {
+  width: 32px;
+  background: #a0b5a9;
+  border-radius: 40px;
+  margin-right: 3px;
+  height: 33px;
+}
+.user-search-block:hover .hide-search{
   display: block;
 }
 .form_search {
@@ -954,8 +961,15 @@ ul.social li {
 
 /* CATALOG-PAGE */
 
-.user-cart:hover .hide-cart {
+.user-cart-block:hover .hide-cart {
   display: block;
+}
+.user-cart-block {
+  width: 125px;
+  background: #ffffff;
+  border-radius: 50px;
+  height: 33px;
+  text-align: center;
 }
 .hide-cart {
   color: black;
@@ -963,7 +977,7 @@ ul.social li {
   position: absolute;
   min-height: 240px;
   background-color: #f8f7f4;
-  top: 63px;
+  top: 65px;
   right: 50px;
   border-radius: 10px;
   z-index: 999;
@@ -1080,14 +1094,16 @@ ul.social li {
   height: 20px;
   background: url("../img/basket-full.png") no-repeat;
   right: 136px;
-  top: 37px;
+  top: 38px;
   vertical-align: middle;
 }
 .user-cart  {
   background-color: #ffffff;
 }
-.span_full {
+.user-cart .span_full {
   color: black;
+  vertical-align: text-bottom;
+  margin-top: -18px;
 }
 .work-header_catalog {
   position: absolute;
